@@ -428,6 +428,7 @@ a:active {
 	font-weight: bold;
 	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
 	padding: 13px 20px 13px 55px;
+	transition: background ease-out 280ms;
 }
 
 .item-btn:not(.mail-btn):hover {
@@ -600,6 +601,7 @@ a:active {
 	padding: 20px 20px 30px;
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 	text-align: center;
+	transition: background ease-out 280ms;
 }
 
 .section-menu li .item-number {
@@ -671,6 +673,18 @@ a:active {
 
 .section-menu li.item-3  .inner {
 	background: #fff666;
+}
+
+.section-menu li.item-1:hover .inner{
+	background: #3ac47e;
+}
+
+.section-menu li.item-2:hover .inner{
+	background: #e8457a;
+}
+
+.section-menu li.item-3:hover .inner{
+	background: #f3e949;
 }
 
 .section-menu li.item-1 .item-icon {

@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Existence-Light';
-    src:  url('Existence-Light.ttf.woff') format('woff'),
-    url('Existence-Light.ttf.svg#Existence-Light') format('svg'),
-    url('Existence-Light.ttf.eot'),
-    url('Existence-Light.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}

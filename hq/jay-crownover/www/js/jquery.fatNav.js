@@ -18,7 +18,7 @@
             var $nav = this.$nav = $('.fat-nav');
             var $hamburger = this.$hamburger = $('<a href="javascript:void(0)" class="hamburger"><div class="hamburger__icon"></div></a>');
             
-            this._bodyOverflow = $('body').css('overflow');
+            this._bodyOverflow = '';//$('body').css('overflow');
 
             // Hack to prevent mobile safari scrolling the whole body when nav is open
             if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {

@@ -774,6 +774,17 @@ a.extract-btn:hover {
 	position: relative;
 	padding: 30px 0;
 	background: #353c4f;
+	text-align: center;
+}
+
+.section-press .placeholder {
+	display: inline-block;
+	padding: 50px 0;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .quote {

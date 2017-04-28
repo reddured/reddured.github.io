@@ -619,6 +619,7 @@ ul {
 	max-width: 315px;
 	margin: 0 84px;
 	margin-bottom: 40px;
+	vertical-align: top;
 }
 
 /* format btn */

@@ -38,6 +38,13 @@ lib.properties = {
 
 
 
+(lib.logo = function() {
+	this.spriteSheet = ss["clash_300x250_atlas_"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.nouvelle_serie = function() {
 	this.initialize();
 
@@ -349,10 +356,16 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{loo
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(15).to({_off:false},0).to({scaleX:1,scaleY:1,alpha:1},44,cjs.Ease.get(1)).to({_off:true},1).wait(79).to({_off:false,scaleX:0.82,scaleY:0.82,x:152.6,y:59.1,alpha:0},0).to({alpha:1},25).wait(33));
 
-	// bg
-	this.instance_6 = new lib.background();
+	// logo
+	this.instance_6 = new lib.logo();
+	this.instance_6.setTransform(260.1,211.1,0.6,0.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(197));
+
+	// bg
+	this.instance_7 = new lib.background();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(197));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(141.7,125,308.4,250);

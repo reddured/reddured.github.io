@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>clash_300x250</title>
+<title>clash_300x600</title>
 
 <script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
 <script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
 <script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
 <script src="http://code.createjs.com/preloadjs-0.6.1.min.js"></script>
-<script src="clash_300x250.js"></script>
+<script src="clash_300x600.js"></script>
 
 <script>
 var canvas, stage, exportRoot;
@@ -21,7 +21,7 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
-loader.loadFile({src:"images/clash_300x250_atlas_.json", type:"spritesheet", id:"clash_300x250_atlas_"}, true);
+loader.loadFile({src:"images/clash_300x600_atlas_.json", type:"spritesheet", id:"clash_300x600_atlas_"}, true);
 	loader.loadManifest(lib.properties.manifest);
 }
 
@@ -31,8 +31,8 @@ function handleFileLoad(evt) {
 
 function handleComplete(evt) {
 	var queue = evt.target;
-	ss["clash_300x250_atlas_"] = queue.getResult("clash_300x250_atlas_");
-	exportRoot = new lib.clash_300x250();
+	ss["clash_300x600_atlas_"] = queue.getResult("clash_300x600_atlas_");
+	exportRoot = new lib.clash_300x600();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
@@ -45,6 +45,6 @@ function handleComplete(evt) {
 </head>
 
 <body onload="init();" style="background-color:#D4D4D4">
-	<canvas id="canvas" width="300" height="250" style="background-color:#FFFFFF"></canvas>
+	<canvas id="canvas" width="300" height="600" style="background-color:#FFFFFF"></canvas>
 </body>
 </html>

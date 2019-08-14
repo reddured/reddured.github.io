@@ -631,6 +631,31 @@ ul {
 	vertical-align: top;
 }
 
+@media (min-width: 800px) {
+	.book-list-row-mode .book {
+		width: auto;
+		max-width: initial;
+	}
+
+	.book-list-row-mode .book .cover {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		max-width: 315px;
+		vertical-align: top;
+		margin: 0 20px 20px;
+	}
+
+	.book-list-row-mode .book .content {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		max-width: 315px;
+		/* margin-top: 60px; */
+		margin: 60px 20px 0;
+	}
+}
+
 /* format btn */
 .format-btn,
 .format-btn:visited {

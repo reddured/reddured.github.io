@@ -751,7 +751,8 @@ a:active {
 }
 
 .section-intro .section-body {
-	line-height: 32px;
+	font-size: 19px;
+    line-height: 36px;
 }
 
 .section-intro .section-body .col-md-6 {
@@ -761,8 +762,6 @@ a:active {
 
 .section-intro .section-body p {
 	text-align: justify;
-	font-size: 15px;
-	font-weight: 600;
 }
 
 .section-intro .highlight {
@@ -842,7 +841,7 @@ a:active {
 	transform: rotate(-9deg);
 }*/
 .video-woman {
-	bottom: 100px;
+	bottom: 60px;
 	right: 125px;
 	width: 619px;
 	height: 837px;
@@ -862,7 +861,7 @@ a:active {
 .video-woman-hand-2 {
 	width: 54px;
     height: 225px;
-    top: 318px;
+    top: 398px;
     right: 94px;
 	background: url(../img/video_vectorized_woman_hand_2.svg) no-repeat;
 }

@@ -1239,7 +1239,7 @@ a:active {
 	}
 	
 	.book .extra {
-		right: 0;
+		right: 20%;
 	}
 	
 	.book .content {
@@ -1329,12 +1329,17 @@ a:active {
 		bottom: auto;
 		right: auto;
 	}
+	
 	.billboard-woman {
 		height: 50%;
 	}
 }
 
 @media (max-width: 480px) {
+	
+	.book .extra {
+		right: 0;
+	}
 	
 	.download-btn {
 		font-size: 15px;

@@ -1045,6 +1045,31 @@ a:active {
 	margin-bottom: 60px;
 }
 
+/* review */
+.section-review {
+	background-color: #45c2d0;
+}
+
+.section-review .container {
+	background-color: #45c2d0;
+}
+
+.section-review .title-wrapper svg {
+	fill: #ed5f5c;
+}
+
+.section-review .title {
+	color: #fff;
+}
+
+.section-review ul {
+	padding: 0 30px;
+}
+
+.section-review li {
+	margin-bottom: 60px;
+}
+
 /* download */
 .section-download,
 .section-download > .oblique {
@@ -1307,7 +1332,8 @@ a:active {
 		font-size: 16px;
 	}
 	
-	.section-press ul {
+	.section-press ul,
+	.section-review ul	{
 		padding: 0 10px;
 	}
 	

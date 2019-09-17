@@ -1047,6 +1047,7 @@ a:active {
 
 /* review */
 .section-review {
+	z-index: 1;
 	background-color: #45c2d0;
 }
 

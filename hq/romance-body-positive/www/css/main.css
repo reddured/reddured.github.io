@@ -492,6 +492,14 @@ a:active {
 	margin: 60px 0 0;
 }
 
+.arrow-btn .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon_arrow_right.svg) no-repeat center center;
+	vertical-align: middle;
+}
+
 /* oblique */
 .oblique {
 	position: absolute;
@@ -742,11 +750,6 @@ a:active {
 	line-height: normal;
 }
 
-.section-intro .basic-btn {
-	background-color: #f0533f;
-	margin-top: 20px;
-}
-
 .section-intro .section-body {
 	line-height: 32px;
 }
@@ -760,6 +763,20 @@ a:active {
 	text-align: justify;
 	font-size: 15px;
 	font-weight: 600;
+}
+
+.section-intro .highlight {
+	margin-top: 20px;
+	font-size: 18px;
+    font-weight: 600;
+    background: #f0533f;
+    color: #fff;
+	display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
 /* video */

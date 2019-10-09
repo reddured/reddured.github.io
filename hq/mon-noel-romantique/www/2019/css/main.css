@@ -362,6 +362,8 @@ a:focus {
 .hero-area {
   padding: 130px 0 40px 0;
 	background-image: url(../img/fond_header_mobile.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
 }
 .hero-area p {
 	padding: 0 0px;

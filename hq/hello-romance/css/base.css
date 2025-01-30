@@ -560,7 +560,7 @@ a:hover {
 }
 
 .wrapper.wrapper-left .image {
-    background-image: url(/img/eth_cover.jpg);
+    background-image: url(./../img/eth_cover.jpg);
 }
 
 .wrapper.wrapper-right .skew-wrapper {
@@ -568,7 +568,7 @@ a:hover {
 }
 
 .wrapper.wrapper-right .image {
-    background-image: url(/img/harlequin_cover.jpg);
+    background-image: url(./../img/harlequin_cover.jpg);
 }
 
 

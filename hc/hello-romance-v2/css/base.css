@@ -230,6 +230,7 @@ a:hover {
     margin-top: -6px;
     vertical-align: middle;
     display: inline-block;
+	width: 100%;
 }
 
 .menu-link {
@@ -371,7 +372,6 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-	overflow: hidden;
     transition: all 218ms ease-out;
 }
 
@@ -1239,7 +1239,7 @@ a:hover {
 
     .is-split-vertical .inner {
         width: calc(50% + 100px);
-        height: 100%;
+        height: calc(100% - 1px);/* solve bottom subpixel bug with cover flow */
         transform: skew(calc(var(--split-vertical-angle)));
     }
 

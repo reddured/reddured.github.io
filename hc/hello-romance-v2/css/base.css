@@ -1,3 +1,12 @@
+@font-face { 
+	font-family: "Open Sans"; 
+	src: url('./../font/OpenSans-VariableFont_wdth,wght.woff2') format('woff2'), 
+		url('./../font/OpenSans-VariableFont_wdth,wght.ttf') format('truetype'); 
+	font-weight: 300 800; 
+	font-style: normal; 
+	font-display: swap;
+} 
+
 *,
 *::after,
 *::before {
@@ -33,7 +42,7 @@ body {
     margin: 0;
     color: var(--color-text);
     background-color: var(--color-bg);
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -505,6 +514,8 @@ a:hover {
 	animation: overlayItemAnim 0.35s ease-out forwards;
 	opacity: 0;
 	transform: translate(0, 100%);
+	overflow: hidden;
+	will-change: transform, opacity;
 }
 
 .overlay-item:nth-child(1) { animation-delay: 0.5s;}
@@ -603,7 +614,6 @@ a:hover {
 .button {
     margin-top: 10%;
     display: inline-block;
-    font-family: Open Sans, sans-serif;
     font-size: 18px;
     color: #fff;
     padding: 10px 25px;
@@ -671,10 +681,11 @@ a:hover {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
     z-index: 3;
-    transform: skew(30deg);
-	left: -50%;
+    transform: skew(30deg) translateX(-50%);
+	/*left: -50%;*/
 	opacity: 0;
     animation: shineAnim 0.75s linear;
+	will-change: transform, opacity;
 }
 
 .wrapper-left .shine-intro {
@@ -697,34 +708,40 @@ a:hover {
 
 @keyframes shineAnimIntro {
     0% {
-        left: -50%;
+        /*left: -50%;*/
+		transform: skew(30deg) translateX(-50%);
         opacity: 0;
     }
 
     5% {
-        left: 25%;
+        /*left: 25%;*/
+		transform: skew(30deg) translateX(25%);
         opacity: .5;
     }
 
     10% {
-        left: 100%;
+        /*left: 100%;*/
+		transform: skew(30deg) translateX(100%);
         opacity: 0;
     }
 }
 
 @keyframes shineAnim {
     0% {
-        left: -50%;
+        /*left: -50%;*/
+		transform: skew(30deg) translateX(-50%);
         opacity: 0;
     }
 
     50% {
-        left: 25%;
+        /*left: 25%;*/
+		transform: skew(30deg) translateX(25%);
         opacity: .5;
     }
 
     100% {
-        left: 100%;
+        /*left: 100%;*/
+		transform: skew(30deg) translateX(100%);
         opacity: 0;
     }
 }
